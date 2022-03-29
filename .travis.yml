@@ -5,4 +5,4 @@ before_install:
   - docker build -t seshadri/react -f Dockerfile.dev .
 
 script:
-  - docker run seshadri/react npm run test -- --coverage
+  - docker run -e CI=true seshadri/react npm run test -- --coverage

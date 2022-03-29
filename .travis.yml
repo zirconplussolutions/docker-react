@@ -1,0 +1,8 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t seshadri/react -f Dockerfile.dev .
+
+script:
+  - docker run seshadri/react npm run test -- --coverage

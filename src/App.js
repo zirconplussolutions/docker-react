@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Reload</p>
-        Me Learn React is very interesting
+        Me Learn React is very interesting in travis
       </header>
     </div>
   );
